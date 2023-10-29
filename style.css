@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #081b29;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    border-bottom: 2px solid #0ef;
+}
+
+.header .git, .left-arr{
+    color: #0ef;
+    text-decoration: none;
+    font-size: 32px;
+    letter-spacing: 2px;
+    transition: 0.15s ease;
+}
+
+.header .git:hover, .left-arr:hover{
+    color: #fff;
+    text-shadow: 0 0 7px #fff;
+    transition: 0.15s ease;
+}
+
+.left-arr{
+    padding: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.link-list{
+    width: 100%;
+    padding: 42px 20%;
+}
+
+.link-list a{
+    text-align: center;
+    display: block;
+    color: #0ef;
+    font-size: 24px;
+    text-decoration: none;
+    background: transparent;
+    margin-bottom: 22px;
+    line-height: 56px;
+    border-radius: 16px;
+    border: 2px solid #0ef;
+    transition: 0.15s ease;
+}
+
+.link-list a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 16px #0ef;
+    letter-spacing: 1px;
+    transition: 0.15s ease;
+}
+
+.lab-content{
+    position: absolute;
+    margin-top: 172px;
+    width: 100%;
+    height: 100vh;
+    padding: 0 32px;
+}
+
+.lab-content h1{
+    color: #0ef;
+    text-align: center;
+}
+
+.lab{
+    padding: 14px 24px;
+    border-bottom: 2px solid #0ef;
+    border-radius: 22px;
+    margin-top: -2px;
+}
+
+.lab-num{
+    color: #0ef;
+    font-size: 32px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.lab-inserted{
+    display: flex;
+}
+
+.lab-inserted a{
+    display: block;
+    text-decoration: none;
+    color: #0ef;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    border: 2px solid #0ef;
+    margin-right: 8px;
+    border-radius: 16px;
+}
+
+.lab-inserted a.disabled{
+    border-color: #777;
+    color: #777;
+    pointer-events: none;
+}
+
+.lab-inserted a:hover{
+    color: #081b29;
+    background: #0ef;
+    box-shadow: 0 0 10px #0ef;
+}
